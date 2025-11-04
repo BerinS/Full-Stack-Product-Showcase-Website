@@ -1,0 +1,62 @@
+/* Fullscreen loading overlay */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10005;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.loader_image {
+  max-width: 250px;
+  height: auto;
+  padding: 1.5rem;
+  display: block;
+  margin: 0 auto;
+  animation: fadePulse 1s ease-in-out infinite;
+}
+
+@keyframes fadePulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.loader_text {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 14px;
+  background: linear-gradient(135deg,#0000 calc(50% - 0.5em),#000 0 calc(50% + 0.5em),#0000 0) right/300% 100%;
+  animation: l22 2s infinite;
+}
+.loader_text::before {
+  content: "Loading...";
+  color: #1a1a1a00;
+  padding: 0 5px;
+  background: inherit;
+  background-image: linear-gradient(135deg,#000 calc(50% - 0.5em),#fff 0 calc(50% + 0.5em),#000 0);
+  -webkit-background-clip:text;
+          background-clip:text;
+}
+
+@keyframes l22{
+  100%{background-position: left}
+}
+ 
