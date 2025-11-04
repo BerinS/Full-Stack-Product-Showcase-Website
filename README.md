@@ -1,4 +1,4 @@
-# Full Stack Hercafe Showcase Website - Production Repo
+# Full Stack Product Showcase Website - Showcase Repo
 
 <br>[![Status](https://img.shields.io/badge/status-live-green.svg)](https://saccaria.ba)  ![REST API](https://img.shields.io/badge/REST_API-FF6C37?style=flat&logo=json&logoColor=white)  ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 <br>
@@ -90,5 +90,6 @@ root/
 ```
 This structure separates the backend API from the frontend client. The frontend includes dedicated pages for each product and a separate dashboard section for admin management.
 
-## Status
+## Notes
 **Live**: The application is currently in use and serving traffic.
+**Important**: This repository is a clone of the private production repo. The purpose of this one is to showcase the project.
